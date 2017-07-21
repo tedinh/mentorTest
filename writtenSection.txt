@@ -1,29 +1,29 @@
 Answer each question in a written format
 
 1. What does semantic HTML mean?
-
+    Semantic HTML means that elements that introduces meaning to webpage rather than presentation. For example, elements like the <p>, <body>, <h1>, etc. are semantic html because they define themselves because the browser knows how to present them. Versus elements like <strong>, <i>, etc. which only define the text.
 2. What is the box model?
-
+    The box model is used when talking about CSS design. It consists of the margin, border, and padding which all surrounds the content or element.
 3. What is the difference between IDs and Classes?
-
+    ID can only be assigned to one element whereas Classes can be assigned to more than one.
 4. What does the z-index do?
-
+    The z-index is a css property which identifies the stack order of elements. Highest z-index will show the element on top of the others.
 5. Summarize what the keyword 'this' is used for?
-
+    The "this" keyword is used to refer to the object that called it or if its not called by the object then it refers to the global scope.
 6. What is a callback?
-
+    A function that is passed through as a param of another function and is immediately called while inside of that function.
 7. What is a closure?
-
+    A self-invoking function.
 8. How does prototype work?
-
+    Adds a method to an object if it doesn't already exist.
 9. What is MVC?
-
+    Model View Controller. This used in AngularJS and it's a way for the view and model to speak to each other via the Controller.
 10. What is the component lifecycle?
-
+    Mounting, Updating, and Unmounting. These methods allows you to overide the code at any particular time. For example if you had a car object with a type, color, and year in it, you can use any of th 3 methods to change the code to include more or less properties.
 11. What is REST?
-
+    REST allows you to utilize resources by either "GET, PUT, POST, or DELETE" which enables you to build an application.
 12. Name three ways of getting data from the URL using express
-
+    param, query, body
 create table users (
 id serial,
 name varchar(255),
@@ -33,9 +33,10 @@ email varchar(255)
 12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
 
 -Get all users:
-
+SELECT * FROM users;
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
-
+INSERT INTO users (name, email) VALUES ("Terry", "Tedinh@Gmail.com");
 -Update the newly created user's name to 'Bobby Boy':
-
+UPDATE users SET name = 'Bobby Boy';
 -Delete the newly updated user:
+DELETE FROM users WHERE name = 'Bobby Boy';
